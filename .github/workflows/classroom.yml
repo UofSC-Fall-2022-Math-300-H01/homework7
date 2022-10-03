@@ -1,0 +1,14 @@
+name: GitHub Classroom Workflow
+
+on: push
+
+jobs:
+  build:
+    name: Autograding
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0 
+      - name: classroom autograding
+        uses: education/autograding@v1

@@ -1,0 +1,76 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{ebproof}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue
+}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{caution}[theorem]{Caution}
+
+\begin{document}
+
+\title{Homework 6}
+
+\maketitle
+
+\begin{enumerate}
+	\item The division algorithm says that given two natural numbers $n$ and $m$ we can write 
+		\begin{displaymath}
+			n = qm + r
+		\end{displaymath}
+		for two integers $q,r$ with $0 \leq r < m$. 
+
+		Write this as a formula in predicate logic. 
+	\item One way to express the infinitude of prime numbers is: There exists a prime number and 
+		for any prime number $p$ there exists another prime $q$ with $q \gneq p$. 
+
+		Write this as a formula in predicate logic. 
+	\item Fermat's Last Theorem says: for any $n > 2$ there are no solutions to 
+		\begin{displaymath}
+			a^n + b^n = c^n 
+		\end{displaymath}
+		with $a,b,c \in \mathbb{N}$ with $a > 0, b > 0,$ and $c>0$. 
+		
+		Write this as a formula in predicate logic. 
+	% \begin{enumerate}
+	% 	\item For any natural number $n$, there is a natural number $m$ such that $m > 5n$. 
+	% 	\item If $n$ is divisible by $m^2$, then $n$ is divisible by $m$. 
+	% 	\item For every prime number $p$, there is a composite (non-prime) number bigger than 
+	% 		$p$
+	% 	\item There exists a unique solution to $\sqrt{n} = 0$. 
+	% \end{enumerate}
+	\item If the following are provable, give a proof. If not, give a model that invalidates it. 
+	\begin{enumerate}
+		\item $\displaystyle{\forall x~ (A(x) \to B(x)) \to \forall x~ (\neg A(x) \land B(x))}$
+		\item $\displaystyle{\exists x~y~ B(x,y) \to \exists z~ B(z,z)}$
+		% \item $\displaystyle{\forall x~ \neg (A(x) \lor B(x) \to C(x)) \to \exists x~ \neg C(x) }$
+		\item $\displaystyle{\forall x~ A(x) \land \exists y~ (A(y) \to B) \to B}$
+	\end{enumerate}
+	\item Consider the statement:
+	\begin{center}
+		For any natural number $n$, either $n^2$ or $n^2 - 1$ is divisible by $3$. 
+	\end{center}
+	State this as formula. How far can you get to a formal proof of this statement via 
+	natural deduction and using the division algorithm? What other facts would help you 
+	get to a proof?
+\end{enumerate}
+
+\end{document}

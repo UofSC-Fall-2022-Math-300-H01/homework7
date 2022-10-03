@@ -1,0 +1,14 @@
+{
+    "tests": [
+      {
+        "name": "Checking the format of the submission",
+        "setup": "",
+        "run": "file --mime-type solutions.pdf",
+        "input" : "",
+        "output": "application/pdf",
+        "comparison": "included",
+        "timeout": 5,
+        "points": 0
+      }
+    ]
+  }
