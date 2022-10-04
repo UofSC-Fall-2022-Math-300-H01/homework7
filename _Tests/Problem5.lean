@@ -1,8 +1,8 @@
-import Hw5
+import Hw7
 import Lean.Elab.Print
 import Lean.Elab.Command
 
-theorem desiredType (A B : Prop) : ¬ A → A → B := sorry 
+theorem desiredType : ∀ (α : Type) (D : Prop), α → (α → D ↔ D):= sorry 
 
 open Lean
 open Lean.Meta

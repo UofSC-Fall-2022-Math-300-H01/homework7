@@ -1,8 +1,8 @@
-import Hw5
+import Hw7
 import Lean.Elab.Print
 import Lean.Elab.Command
 
-theorem desiredType (A B C : Prop) (h : B ↔ C) : (A ∨ B) ↔ (A ∨ C) := sorry 
+theorem desiredType : ∀ (α : Type) (f : α → α) (A : α → Prop), (∀ (x : α), A x → A (f x)) → ∀ (y : α), A y → A (f (f y)) := sorry 
 
 open Lean
 open Lean.Meta
