@@ -12,5 +12,3 @@ theorem problem3 (h : ∀ x, A x → A (f x)) : ∀ y, A y → A (f (f y)) := so
 theorem problem4 (h₁ : ∀ x, A x ∨ B x) (h₂ : ∀ x, A x → C x) (h₃ : ∀ x, B x → C x) : ∀ x, C x := sorry
 
 theorem problem5 (a : α) : (∀ (x:α), D) ↔ D := sorry 
-
-#check problem5
