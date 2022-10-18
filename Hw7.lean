@@ -3,7 +3,7 @@ variable (f : α → α)
 variable (A B C : α → Prop)
 variable (D : Prop) 
 
-theorem problem1 (h₁ : ∀ x, A x → B x) (h₂ : ∃ y, A y) : ∃ z, B z := 
+theorem problem1 (h₁ : ∀ x, A x → B x) (h₂ : ∃ y, A y) : ∃ z, B z := sorry
 
 theorem problem2 (h : ∃ x, A x) : ∃ y, A y ∨ B y := sorry 
 
